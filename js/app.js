@@ -1,7 +1,11 @@
 $(document).ready(function() {
+	
 	$("button#play").click(function() {
 
-		for (i=1; i<31; i++) {
+		var userChoice = +(document.getElementById('user-choice').value);
+		
+
+		for (i=1; i<(userChoice +1); i++) {
 			if((i%3) + (i%5) === 0){
 				$("#results").append("FizzBuzz"+"<br/>");
 			}
